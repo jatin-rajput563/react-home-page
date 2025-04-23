@@ -17,7 +17,7 @@ const Nav = () => {
 
     return (
         <nav className='relative '>
-            <div className="max-w-[1140px] px-4 mx-auto">
+            <div className="max-w-[1320px] px-4 mx-auto">
                 <div className="flex justify-between items-center py-[17px]">
                     <div className="flex items-center gap-3.5">
                         <a href="#"><img src={logo} alt="nav-logo" className='max-w-[50px] sm:max-w-[98px]' /></a>

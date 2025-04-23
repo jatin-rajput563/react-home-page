@@ -16,7 +16,7 @@ const Nav = () => {
     }, []);
 
     return (
-        <nav className='mb-173 bg-black'>
+        <nav className='relative '>
             <div className="max-w-[1140px] px-4 mx-auto">
                 <div className="flex justify-between items-center py-[17px]">
                     <div className="flex items-center gap-3.5">

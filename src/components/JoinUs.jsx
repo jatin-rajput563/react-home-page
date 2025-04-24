@@ -35,7 +35,7 @@ const JoinUs = () => {
                     <div className='pt-[163px] max-md:pt-[50px]'>
                         <div className="flex flex-wrap flex-row -mx-3">
                             <div className="w-full lg:w-1/2">
-                                <img className='w-full max-w-[536px] max-sm:max-w-[290px] max-lg:flex max-lg:mx-auto' src={threeLine} alt="three-line-img" />
+                                <img className='w-full max-w-[536px] max-sm:max-w-[] max-lg:flex max-lg:mx-auto' src={threeLine} alt="three-line-img" />
                             </div>
                             <div className="w-full lg:w-1/2">
                                 <div>

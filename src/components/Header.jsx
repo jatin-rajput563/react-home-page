@@ -5,16 +5,16 @@ import line from '../assets/image/svg/heading-line.svg'
 const Header = () => {
     return (
         <>
-            <div className='bg-[url(../src/assets/image/png/header-bg.png)] relative bg-cover bg-no-repeat bg-center min-h-screen'>
+            <div className='bg-[url(../src/assets/image/png/header-bg.png)] relative bg-cover bg-no-repeat bg-center pb-[104px]'>
                 <div className="absolute inset-0 bg-black opacity-57"></div>
                 <Nav />
                 <div className="container relative z-[1] max-w-[1320px] mx-auto">
                     <div className='w-full relative mt-[120px]'>
-                        <h1 className='font-bold text-[64px] leading-[150%] text-white max-w-[1044px]'>Sed tortor in quisque morbi scelerisque etiam eu.</h1>
+                        <h1 className='font-bold text-[64px] leading-[150%] text-white max-w-[1044px] font-family-primary'>Sed tortor in quisque morbi scelerisque etiam eu.</h1>
                         <img className='absolute top-[50%] left-[27.5%]' src={line} alt="heading-line" />
                     </div>
-                    <p className='max-w-[765px] font-normal text-[20px] leading-[100%] text-white font-family-second'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
-                    <div className='max-w-[980px] max-[744px]:max-w-[500px] py-[17px] px-[35px] bg-[#2C49FEBD] rounded-[150px] max-[744px]:rounded-[50px] max-[744px]:gap-[10px] flex justify-between max-[744px]:flex-col max-[744px]:m-auto'>
+                    <p className='max-w-[765px] font-normal text-[20px] leading-[130%] text-white pt-[20px] font-family-second m-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,</p>
+                    <div className='max-w-[980px] max-[744px]:max-w-[500px] py-[17px] px-[35px] bg-[#2C49FEBD] rounded-[150px] max-[744px]:rounded-[50px] max-[744px]:gap-[10px] flex justify-between max-[744px]:flex-col max-[744px]:m-auto mt-[145px] '>
                         <div className='flex gap-[17px] items-center max-[744px]:justify-center'>
                             <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.5 16.7917C17.6401 16.7917 19.375 15.0569 19.375 12.9167C19.375 10.7766 17.6401 9.04175 15.5 9.04175C13.3599 9.04175 11.625 10.7766 11.625 12.9167C11.625 15.0569 13.3599 16.7917 15.5 16.7917Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

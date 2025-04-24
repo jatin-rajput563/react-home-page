@@ -1,84 +1,65 @@
 import React from 'react'
-import logo from '../assets/image/svg/logo.svg';
-import instagram from '../assets/image/svg/instagram.svg'
-import facebook from '../assets/image/svg/facebook.svg'
-import twiter from '../assets/image/svg/twiter.svg'
-import img1 from '../assets/image/png/gallery-img-1.png'
-import img2 from '../assets/image/png/gallery-img-2.png'
-import img3 from '../assets/image/png/gallery-img-3.png'
-import img4 from '../assets/image/png/gallery-img-4.png'
-import img5 from '../assets/image/png/gallery-img-5.png'
+import logo from '../assets/images/svg/nav-logo.svg'
+import insta from '../assets/images/svg/insta-icon.svg'
+import facebook from '../assets/images/svg/facebook-icon.svg'
+import twitter from '../assets/images/svg/twitter-icon.svg'
+import CustomDescription from './common/CustomDescription'
+import img1 from '../assets/images/png/footer-img-1.png'
+import img2 from '../assets/images/png/footer-img-2.png'
+import img3 from '../assets/images/png/footer-img-3.png'
+import img4 from '../assets/images/png/footer-img-4.png'
+import img5 from '../assets/images/png/footer-img-5.png'
 
 const Footer = () => {
     return (
         <>
-            <div className='min-h-screen bg-black pt-[81px]'>
-                <div className="container max-w-[1320px] mx-auto">
-                    <div className="flex flex-row flex-wrap -mx-3">
-                        <div className="w-6/12">
-                            <div className="flex items-center gap-3.5">
+            <div className="bg-black pt-[81px]">
+                <div className="max-w-[1320px] px-4 mx-auto pb-24">
+                    <div className="flex flex-wrap flex-row -mx-3">
+                        <div className="w-6/12 px-3">
+                            <div className="flex items-center gap-3.5 pb-9">
                                 <a href="#"><img src={logo} alt="nav-logo" className='max-w-[50px] sm:max-w-[98px]' /></a>
-                                <a className='font-family-primary font-bold text-4xl leading-[135%] text-[#2C49FE] mb-0' href='#'>Events<span className='text-[#01C8FF]'>Free</span></a>
+                                <a className='font-family-primary font-bold text-2xl sm:text-4xl leading-[135%] text-[#2C49FE] mb-0' href='#'>Events<span className='text-[#01C8FF]'>Free</span></a>
                             </div>
-                            <p className='m-0 max-w-[346px] font-normal text-[14px] font-family-primary pt-[36px] text-white '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c </p>
-                            <div className='flex gap-[15.33px] pt-[23px]'>
-                                <a href="https://www.instagram.com/" target='blank'><img src={instagram} alt="intsagram-svg" /></a>
-                                <a href="https://www.facebook.com/" target='blank'><img src={facebook} alt="facebook-svg" /></a>
-                                <a href="https://x.com/" target='blank'><img src={twiter} alt="twiter-svg" /></a>
+                            <CustomDescription discriptionClass="text-white max-w-[346px] text-base pb-6" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c " />
+                            <div className="flex items-center gap-6">
+                                <a className='' href="https://www.instagram.com/accounts/login/?hl=en" target='_blank'><img src={insta} alt="insta-icon" /></a>
+                                <a className='' href="https://www.facebook.com/?_rdr" target='_blank'><img src={facebook} alt="facebook-icon" /></a>
+                                <a className='' href="https://x.com/" target='_blank'><img src={twitter} alt="twitter-icon" /></a>
                             </div>
                         </div>
                         <div className="w-6/12">
                             <div className="flex flex-wrap flex-row -mx-3 w-full">
-                                <div className="w-3/12">
-                                    <ul className='list-none flex flex-col gap-3'>
-                                        <li>
-                                            <p className='font-bold text-[14px] text-white font-family-primary'>SERVICES</p>
-                                        </li>
-                                        <li>
-                                            <a className='font-normal text-[12px] text-white font-family-primary' href="#">About</a>
-                                        </li>
-                                        <li>
-                                            <a className='font-normal text-[12px] text-white font-family-primary' href="#">News</a>
-                                        </li>
-                                        <li>
-                                            <a className='font-normal text-[12px] text-white font-family-primary' href="#">ullamcorper</a>
-                                        </li>
-                                        <li>
-                                            <a className='font-normal text-[12px] text-white font-family-primary' href="#">Contact</a>
-                                        </li>
+                                <div className="md:w-3/12 px-3 flex justify-start">
+                                    <ul className=''>
+                                        <li className='text-white font-family-primary font-bold text-sm leading-[100%] mb-3'>SERVICES</li>
+                                        <li className='mb-3'><a className='font-family-primary hover:text-[#2C49FE] transition-all duration-200 ease-in text-white font-normal text-xs leading-[100%]' href="#">About</a> </li>
+                                        <li className='mb-3'><a className='font-family-primary hover:text-[#2C49FE] transition-all duration-200 ease-in text-white font-normal text-xs leading-[100%]' href="#">News</a> </li>
+                                        <li className='mb-3'><a className='font-family-primary hover:text-[#2C49FE] transition-all duration-200 ease-in text-white font-normal text-xs leading-[100%]' href="#">ullamcorper</a> </li>
+                                        <li><a className='font-family-primary text-white font-normal hover:text-[#2C49FE] transition-all duration-200 ease-in text-xs leading-[100%]' href="#">Contact</a> </li>
                                     </ul>
                                 </div>
-                                <div className="w-3/12">
-                                    <ul className='list-none flex flex-col gap-3'>
-                                        <li>
-                                            <p className='font-bold text-[14px] text-white font-family-primary'>EVENTS</p>
-                                        </li>
-                                        <li>
-                                            <a className='font-normal text-[12px] text-white font-family-primary' href="#">ullamcorper</a>
-                                        </li>
-                                        <li>
-                                            <a className='font-normal text-[12px] text-white font-family-primary' href="#">ullamcorper</a>
-                                        </li>
-                                        <li>
-                                            <a className='font-normal text-[12px] text-white font-family-primary' href="#">ullamcorper</a>
-                                        </li>
-                                        <li>
-                                            <a className='font-normal text-[12px] text-white font-family-primary' href="#">ullamcorper</a>
-                                        </li>
+                                <div className="md:w-3/12 px-3 justify-start flex">
+                                    <ul className=''>
+                                        <li className='text-white font-family-primary font-bold text-sm leading-[100%] mb-3'>EVENTS</li>
+                                        <li className='mb-3'><a className='font-family-primary text-white hover:text-[#2C49FE] transition-all duration-200 ease-in font-normal text-xs leading-[100%]' href="#">ullamcorper</a></li>
+                                        <li className='mb-3'><a className='font-family-primary text-white hover:text-[#2C49FE] transition-all duration-200 ease-in font-normal text-xs leading-[100%]' href="#">ullamcorper</a></li>
+                                        <li className='mb-3'><a className='font-family-primary text-white hover:text-[#2C49FE] transition-all duration-200 ease-in font-normal text-xs leading-[100%]' href="#">ullamcorper</a></li>
+                                        <li><a className='font-family-primary text-white font-normal hover:text-[#2C49FE] transition-all duration-200 ease-in text-xs leading-[100%]' href="#">ullamcorper</a></li>
                                     </ul>
                                 </div>
-                                <div className="w-6/12">
-                                    <p className='font-bold text-[14px] text-white font-family-primary'>GALLERY</p>
+                                <div className="lg:w-6/12 w-full px-3">
+                                    <p className='text-white font-family-primary font-bold text-sm leading-[100%] mb-3'>GALLERY</p>
                                     <div className='flex gap-[18px]'>
-                                        <img src={img1} alt="gallery-img" />
-                                        <img src={img2} alt="gallery-img" />
-                                        <img src={img3} alt="gallery-img" />
+                                        <img src={img1} alt="img-1" />
+                                        <img src={img2} alt="img-2" />
+                                        <img src={img3} alt="img-3" />
                                     </div>
-                                    <div className='flex mt-[13px] gap-[18px]'>
-                                        <img src={img4} alt="gallery-img" />
-                                        <img src={img5} alt="gallery-img" />
-                                        <div className='w-[90px] h-[62px] bg-[#18205C] justify-center items-center flex'>
-                                            <p className='m-0 font-bold text-[12px] leading-[150%] text-white font-family-primary max-w-[43px] text-center'>Show More</p>
+                                    <div className='flex mt-[10px] gap-[18px]'>
+                                        <img src={img4} alt="img-4" />
+                                        <img src={img5} alt="img-5" />
+                                        <div className="max-w-[90px] w-full bg-[#2D3CAE87] py-[13px] px-6">
+                                            <p className='font-family-primary font-bold text-xs leading-[150%] text-center text-white'>Show More</p>
                                         </div>
                                     </div>
                                 </div>
@@ -86,6 +67,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                <div className="font-family-primary font-normal text-sm leading-[100%] text-white mb-0 py-6 text-center">© Credits of companyName belong to companyName.</div>
             </div>
         </>
     )
